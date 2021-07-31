@@ -831,7 +831,7 @@ PHP_MINFO_FUNCTION(zbarcode)
 	char *zbar_ver = NULL;
 	unsigned long magick_version;
 
-	zbar_version(&major, &minor);
+	zbar_version(&major, &minor, 0);
 	spprintf(&zbar_ver, 24, "%d.%d", major, minor);
 
 	php_info_print_table_start();
